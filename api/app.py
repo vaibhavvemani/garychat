@@ -14,6 +14,6 @@ def hello():
     return f'<h1>Hello {escape(username)}!</h1>'
 
 @app.get('/hello')
-def hello():
+def gethello():
     username = redis.get("username")
     return f'<h1>Hello {escape(username)}!</h1>'
